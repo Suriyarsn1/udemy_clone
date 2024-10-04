@@ -17,6 +17,11 @@ body {
     padding: 10px;
     align-items: center;
     gap: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+    cursor: pointer;
 }
 
 .navbar__s1__title {
@@ -33,6 +38,7 @@ body {
 .navbar__s2__input {
     width: 60%;
     border: none;
+    background-color: transparent;
 }
 
 .navbar__s2__input:focus {
@@ -52,9 +58,7 @@ body {
     margin-bottom: 10px;
 }
 
-.navbar__1__menu__1
-
- {
+.navbar__1__menu__1 {
     background-color: #9B41D5;
     padding: 15px;
     border-radius: 30px;
@@ -64,6 +68,8 @@ body {
 
 .title__image img {
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .recommed__section {
@@ -78,10 +84,10 @@ body {
 
 .course__card {
     width: 400px;
-    
-    
-   
-  
+
+
+
+
 }
 
 .recommed__container {
@@ -107,68 +113,126 @@ body {
     gap: 10px;
     margin-top: 10px;
 }
-.popular{
+
+.popular {
     margin-top: 10px;
     padding: 20px;
-    
+
 }
-.popular__container{
+
+.popular__container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
-    
+
 }
-.footer__one{
+
+.footer__one {
     display: flex;
     gap: 30px;
 }
-.footer{
+
+.footer {
     background-color: black;
     color: white;
     margin-top: 10px;
     padding: 10px;
     border-bottom: solid 5px white;
 }
-.footer__two{
+
+.footer__two {
     margin-top: 20px;
 }
-.footer__one p,.footer__two p{
+
+.footer__one p,
+.footer__two p {
     margin-top: 10px;
 }
-.navbar__1__menu__1:hover{
+
+.navbar__1__menu__1:hover {
     background-color: #c58bec;
-    color:#8c13dd;
-    width:180px;
+    color: #8c13dd;
+    width: 180px;
     transition: 10s;
 }
-.course-card__button{
-   
+
+.course-card__button {
+
     padding: 10px;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-.course-card__button1,.course-card__button2{
+
+.course-card__button1,
+.course-card__button2 {
     background-color: transparent;
     padding: 5px;
-    color:#8c13dd;
+    color: #8c13dd;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 10px;
     border-radius: 5px;
-    }
-    .course-card__button1:hover{
-        background-color: #8c13dd;
-        color: white;
-        transition: 1s;
-    }
-    .course-card__button2:hover{
-        background-color: #8c13dd;
-        color: white;
-        transition: 1s;
-    }
-    
+}
 
+.course-card__button1:hover {
+    background-color: #8c13dd;
+    color: white;
+    transition: 1s;
+}
 
+.course-card__button2:hover {
+    background-color: #8c13dd;
+    color: white;
+    transition: 1s;
+}
+
+.title__image__offers {
+    border: solid 2px black;
+    width: 600px;
+
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    bottom: 50%;
+    left: 10%;
+    padding: 20px;
+
+}
+
+.title__image__offers p {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.title__image {
+    position: relative;
+    z-index: 1;
+}
+
+.mylearning {
+    position: relative;
+}
+
+.mylearning__popup {
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    right: 0;
+    top: 25px;
+    display: none;
+    border-radius: 10px;
+}
+
+.mylearning:hover {
+    .mylearning__popup {
+        display: block;
+      transition: 5s;
+    }
+    transition: 5s;
+}
