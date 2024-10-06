@@ -205,6 +205,8 @@ body {
 .title__image__offers p {
     margin-top: 10px;
     font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .title__image {
