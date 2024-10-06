@@ -53,17 +53,17 @@ body {
 .navbar__1 {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 8px;
     border-bottom: solid 1px black;
-    margin-bottom: 10px;
+ 
 }
 
 .navbar__1__menu__1 {
     background-color: #9B41D5;
-    padding: 15px;
+    padding: 7px;
     border-radius: 30px;
     color: white;
-    text-align: center;
+    border: 1px solid #9B41D5;
 }
 
 .title__image img {
@@ -151,10 +151,11 @@ body {
 }
 
 .navbar__1__menu__1:hover {
-    background-color: #c58bec;
+    background-color:transparent;
+    border: 1px solid black;
     color: #8c13dd;
-    width: 180px;
-    transition: 10s;
+    transition: 0.6s;
+    cursor: pointer;
 }
 
 .course-card__button {
@@ -191,22 +192,42 @@ body {
 
 .title__image__offers {
     border: solid 2px black;
-    width: 600px;
-
+    width: 400px;
+    height: 100px;
     position: absolute;
     z-index: 2;
     background-color: transparent;
     bottom: 50%;
     left: 10%;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: zoom;
+    animation-duration: 2s;
+    background-color: white;
+    opacity: 0;
+    animation-fill-mode: forwards;
 
 }
 
 .title__image__offers p {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     flex-wrap: wrap;
+   
+
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform:scale(1);
+        opacity: 1;
+    }
+    
 }
 
 .title__image {
